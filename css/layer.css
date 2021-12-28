@@ -1,0 +1,123 @@
+@charset "utf-8";
+/************ gnb *********************/
+.skipnav {position: fixed;width: 100%;background: #000;color: #fff;text-align: center;z-index: 1}
+.skipnav a {display: block;color: #fff;font-weight: bold;width: 0;height: 0;line-height: 0;font-size: 0}
+.skipnav a:focus, .skip a:active {display: block;padding: 5px 0;width: auto;height: auto;line-height: 1.5;font-size: 14px}
+#seoul-common-gnb {height:48px;background-color: #0c82e9}
+
+.utility_wrap {background-color: #1b3a6a}
+.utility_wrap .portal_menu {margin: 0 auto;max-width: 1200px}
+.utility_wrap .portal_menu > a {background: #10223f;padding: 6px 20px;display: inline-block;color: #fff;font-size:14px;height: 32px}
+.utility_wrap .portal_menu > a.on {background: #fff;color: #525252}
+.utility_wrap .portal_menu > .portal_last {margin-left: -4px;}
+.utility_wrap .utility_menu {float: right}
+.utility_wrap .utility_menu li {float: left}
+.utility_wrap .utility_menu li a {color: #fff;font-size: 13px;display: inline-block;padding: 6px 16px 7px;border-right: 1px solid rgba(255, 255, 255, 0.27)}
+.utility_wrap .utility_menu li a.site_map {background: #10223f url(../images/common/site_map.png) no-repeat center;display: inline-block;width: 36px;height: 32px;text-indent: -999em}
+
+header {position: fixed;border-bottom: 1px solid #eaeaea;width: 100%;z-index: 3;background-color: #fff;transition: top 0.2s ease-in-out}
+header.nav-down {top: 0;background-color: #fff}
+header.nav-up {top: -32px;opacity: 0.9;box-shadow: 0px 1px 16px 0 rgba(0, 0, 0, 0.09)}
+header:after {content: '';clear: both;display: block}
+header .navi {margin: 0 auto;max-width: 1200px;position: relative}
+header > .navi > h1 {position: absolute;left: 0;top: 18px}
+header > .navi > h1 > a {background: url(../images/common/logo.png) no-repeat;display: block;text-indent: -999em;width: 185px;margin: 0 auto;height: 34px}
+header > .navi > .m_menu {display:none}
+nav {z-index: 2}
+nav:after {content: '';clear: both;display: block}
+nav.search-tab:after {content:none}
+nav > ul {display: table;float: right;position: relative;text-align: center}
+nav > ul:after {content:'';display:block;clear: both}
+nav > ul > li {float: left;position: relative}
+nav > ul > li > a {display: block;line-height: 22px;text-align: center;position: relative;border-bottom: 1px solid rgba(255, 255, 255, 0.1);font-weight: 600;font-size: 18px;padding: 23px 33px;color: #353535}
+nav > ul > li > a:hover {color:#f19608}
+nav > ul > li > ul {position: absolute;width: 100%;display: none;border-left: 1px solid rgba(255, 255, 255, 0.14);padding: 10px 0;z-index: 3;top: 69px}
+nav > ul > li > ul > li > ul > li > a {color: rgba(255, 255, 255, 0.64);font-size: 14px;background-color: #205a82;display: block;padding: 9px}
+nav > ul > li > ul > li > a {color: #fff;display: block;padding: 10px 10px;font-size: 14px}
+nav > ul > li > ul > li a:hover, nav > ul > li > ul > li a:focus {color: #78f8ff}
+nav > ul > .slider {width: 20%;height: 2px;position: absolute;left: 0;bottom: 0;background-color: #6dc4ff;transition: all .5s;opacity:0}
+nav > ul > li > ul > li > ul {display:none}
+nav > ul > li > a.on {color: #f19608}
+
+.menu_bg {width: 100%;height: 0;position: absolute;top: 70px;display: none;left: 0;z-index: 3;background-color: #1b3a6a}
+.visual img {max-width: 100%;margin: 0 auto;width: 100%}
+.v_m {display:none}
+#sub01, #sub02, #sub03, #sub04, #sub05, #sub06 {display:none}
+
+footer {background-color: #313137;color: #fff;font-size: 14px;font-weight: 200}
+.footer_wrap {max-width:1200px;margin:0 auto;padding: 35px 0;position: relative}
+.f_link ul {float: left}
+.f_link ul li {float:left}
+.f_link ul li a {display: inline-block;padding-right: 24px;line-height: 22px;margin-bottom: 9px}
+.f_link ul li a:hover, .f_link ul li a:hover focus, .Family_site h3 a:hover, .Family_site h3 a:focus {color: #ffe631}
+address {letter-spacing: -0.2px;color: rgb(202, 202, 202);clear: both;}
+address p {letter-spacing: 1px}
+.f_sns {position: absolute;right: 0;top: 22px}
+.f_sns a.Instagram {background-position:0 -45px}
+.f_sns a.blog {background-position:0 -89px}
+.f_sns a.Youtube {background-position:0 -134px}
+
+/**�йи�����Ʈ**/
+.f_logo02 {float: right}
+.Family_site {width: 250px;position: relative;}
+.Family_site h3 {text-align: left}
+.Family_site h3 a {border: 1px solid rgba(255, 255, 255, 0.26);padding: 7px 15px;display: block;background: url(../images/common/Family_open.png) no-repeat right}
+.Family_site ul {position: absolute;bottom: 0px;background-color: #3e3f48;width: 100%;border: 1px solid rgba(255, 255, 255, 0.25);padding: 5px 0;display:none;height: 214px;overflow-y: auto;text-align: left}
+.Family_site ul li {width: 100%}
+.Family_site ul li em {display: block;padding: 8px 15px;font-weight: 500;font-size: 16px;border-bottom: 1px solid rgba(255, 255, 255, 0.23)}
+.Family_site ul li > a {display: block;padding: 5px 16px}
+.Family_site .family_close {background: url(../images/common/family_close.png) no-repeat;position: absolute;top: 13px;right: 0;text-indent: -999em;width: 17px;height: 17px}
+
+@media screen and (max-width: 1200px) {
+	.utility {right:1.5%}
+	header > .navi > h1 {position: relative;background-color: #fff;padding: 13px 2% 13px;width: 100%;z-index: 4;top:0}
+	header > .navi > h1 > a {background: url('../images/common/logo.png') no-repeat center left;margin:0;background-size:90%}
+	header > h1 {background-color: #01385d;padding: 6px 3% 7px;position: relative;width: 100%;z-index: 4}
+	header > .navi > .m_menu {position: absolute;right: 8px;top: 11px;z-index: 4;color: #fff;display: block;background: url(../images/common/menu.png) no-repeat center;text-indent: -999em;width: 39px;height: 39px;border: 1px solid #eaeaea}
+	header > .navi > .m_menu.off {background: url('../images/common/close.png') no-repeat center;right: 9px}
+	nav {display: none;background-color: #093654;top: 60px;margin-left: 0;position: absolute;width: 100%}
+	nav.search-tab {display:table;position: relative;background: none;top: auto}
+	nav.menu-fixed {top: 68px;background-color: #093654}
+	nav > ul {margin-left: 0;float: none}
+	nav > ul > li > a.new:after  {left: 110px}
+	nav > ul {display:block}
+	nav > ul > li {float:none;width:100%}
+	nav > ul > .slider {display:none}
+	nav > ul > li > a {line-height: 40px;display:block;padding-left: 28px;text-align:left;color: #fff}
+	nav > ul > li > a:hover {color:#78f8ff}
+	nav > ul > li.active > a {background-color: #3483b9}
+	nav > ul > li.depth_add > a {display:block;border-bottom: 1px solid rgba(255, 255, 255, 0.1);background: url('../images/common/up_down.png') no-repeat right 13px;font-weight: 300;font-size: 14px}
+	nav > ul > li.depth_add.active > a {background-color: #3483b9;background-position: right -23px}
+	nav.menu-fixed > ul > li > ul {top:0}
+	nav.menu-fixed > ul > li > a {line-height: 22px}
+	nav > ul > li > ul {position:relative;border:0;padding:0;top: 0px}
+	nav > ul > li:last-child > ul {position:relative;top:0;border:0}
+	nav > ul > li > ul > li > a {padding-left: 40px;border-bottom: 1px solid rgba(255, 255, 255, 0.1);text-align: left}
+	nav > ul > li > ul > li > ul > li > a {padding: 9px 0 9px 55px;text-align: left}
+	nav > ul > li > ul > li.depth_add > a {display: block;background: url('../images/common/up_down.png') no-repeat right 13px}
+	nav > ul > li > ul > li.depth_add.active > a {background-color: #3483b9;background-position: right -23px}
+	nav > ul > li > ul > li > ul {display:block}
+	nav > ul > li > a {height:auto;padding:10px;line-height: 22px}
+	nav > ul > li > a.on{color: rgb(255, 253, 253)}
+	nav > ul > li > a.new:after {left:68px;top:10px}
+	.footer_wrap {margin: 0 1.5%}
+	.footer_wrap {padding: 35px 2%}
+	.f_link {padding: 0;margin: 0 auto;display: table;text-align: center;width: 100%}
+	.f_link ul {display: table;margin: 0 auto;float: none}
+	.f_sns {position: relative;clear: both;text-align: center;top: 0px}
+	address p {margin-bottom:20px}
+	.f_logo02 {float: none;clear: both;display: table;margin: 0 auto 10px}
+}
+@media screen and (max-width: 550px) {
+	.utility_wrap .portal_menu > a {display:none}
+}	
+
+@media print {
+	header {display:none}
+	footer {display:none}
+	img {max-width: 100% !important}
+}
+
+@media print and (color) {
+   * {-webkit-print-color-adjust: exact;print-color-adjust: exact}
+}
